@@ -1,0 +1,19 @@
+{
+  "name": "mesto",
+  "version": "0.0.2",
+  "description": "",
+  "main": "./src/scripts/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcw/mesto.git"
+  },
+  "author": "vcw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vcw/mesto/issues"
+  },
+  "homepage": "https://github.com/vcw/mesto#readme"
+}
