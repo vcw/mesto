@@ -1,10 +1,11 @@
 {
   "name": "mesto",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "main": "./src/scripts/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf dist && webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/vcw/mesto/issues"
   },
-  "homepage": "https://github.com/vcw/mesto#readme"
+  "homepage": "https://github.com/vcw/mesto#readme",
+  "devDependencies": {
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
 }
