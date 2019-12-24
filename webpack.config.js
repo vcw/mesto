@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const WebpackMd5Hash = require('webpack-md5-hash');
 
 module.exports = {
   entry: {
@@ -8,7 +9,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    filename: '[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -70,7 +71,7 @@ module.exports = {
       inject: true
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.css'
+      filename: 'style.[contenthash].css'
     })
   ]
 }
