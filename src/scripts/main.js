@@ -1,3 +1,5 @@
+import '../pages/index.css';
+
 import Api from './api.js';
 import Profile from './profile.js';
 import CardList from './card-list.js';
