@@ -18,6 +18,38 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader'
         ]
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        use:[
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images'
+            }
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4
+              },
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              svgo: {
+                cleanupAttrs: true,
+                convertPathData: true
+              }
+            }
+          }
+        ]
       }
     ]
   },
