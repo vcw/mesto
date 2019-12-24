@@ -17,3 +17,5 @@ class Popup {
     this.container.innerHTML = '';
   }
 }
+
+export default Popup;

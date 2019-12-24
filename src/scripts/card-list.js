@@ -1,3 +1,6 @@
+import Card from './card.js';
+import FormPopup from './form-popup.js';
+
 class CardList {
   constructor({ container, api }) {
     const addButton = document.querySelector('.user-info__new-place-button')
@@ -36,3 +39,5 @@ class CardList {
     this.popup.close();
   }
 }
+
+export default CardList;

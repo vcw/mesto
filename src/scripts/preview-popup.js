@@ -1,3 +1,5 @@
+import Popup from './popup.js';
+
 class PreviewPopup extends Popup {
   create() {
     const { name, link } = this.data;
@@ -11,3 +13,5 @@ class PreviewPopup extends Popup {
     this.container.appendChild(content);
   }
 }
+
+export default PreviewPopup;

@@ -1,3 +1,7 @@
+import Api from './api.js';
+import Profile from './profile.js';
+import CardList from './card-list.js';
+
 const container = document.querySelector('.places-list');
 const api = new Api({
   baseUrl: 'http://95.216.175.5/cohort3',
