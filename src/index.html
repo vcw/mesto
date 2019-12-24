@@ -9,7 +9,7 @@
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -96,13 +96,13 @@
   <template id="popup__preview">
     <div class="popup__image-container">
       <img class="popup__image" alt="" src="">
-      <img class="popup__close popup__close_type_image" src="./images/close.svg">
+      <img class="popup__close popup__close_type_image" src="<%=require('./images/close.svg').default%>">
     </div>
   </template>
 
   <template id="popup__form">
     <div class="popup__content">
-      <img class="popup__close" src="./images/close.svg">
+      <img class="popup__close" src="<%=require('./images/close.svg').default%>">
     </div>
   </template>
 </body>
