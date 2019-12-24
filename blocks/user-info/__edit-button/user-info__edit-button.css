@@ -1,0 +1,19 @@
+.user-info__edit-button {
+	margin-top: 28px;
+	width: 38px;
+	height: 18px;
+	font-size: 12px;
+	transition: border-radius 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.user-info__edit-button:hover {
+	border-radius: 3px;
+	background-color: white;
+	color: black;
+}
+
+@media screen and (max-width: 980px) {
+  .user-info__edit-button {
+    margin: 28px auto;
+  }
+}

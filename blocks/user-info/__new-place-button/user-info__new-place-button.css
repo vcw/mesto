@@ -1,0 +1,12 @@
+.user-info__new-place-button {
+  position: absolute;
+  top: 16px;
+  right: 0;
+}
+
+@media screen and (max-width: 980px) {
+  .user-info__new-place-button {
+    position: static;
+    margin-bottom: 40px;
+  }
+}
