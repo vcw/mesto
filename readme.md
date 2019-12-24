@@ -1,5 +1,5 @@
 # Mesto: [Demo](https://vcw.github.io/mesto/)
-## Version: 0.1.1
+## Version: 0.1.2
 
 ## NPM scripts
 
