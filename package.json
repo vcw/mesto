@@ -1,12 +1,12 @@
 {
   "name": "mesto",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "./src/scripts/main.js",
   "scripts": {
     "build": "NODE_ENV=production rimraf dist && webpack --mode production",
     "dev": "NODE_ENV=development webpack-dev-server --mode development --open --watch",
-    "deploy": "gh-pages -d dist"
+    "deploy": "NODE_ENV=production gh-pages -d dist"
   },
   "repository": {
     "type": "git",
