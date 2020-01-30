@@ -1,6 +1,9 @@
+import FormPopup from './form-popup.js';
+
 class Profile {
   constructor(api) {
-    api.getMyInfo()
+    this.api = api;
+    this.api.getMyInfo()
       .then((userInfo) => {
         this.profileInfo = userInfo;
         this.render();
@@ -14,7 +17,7 @@ class Profile {
   }
 
   update(newInfo) {
-    api.editMyInfo(newInfo)
+    this.api.editMyInfo(newInfo)
       .then((userInfo) => {
         this.profileInfo = userInfo;
         this.render();
@@ -49,3 +52,5 @@ class Profile {
     this.popup.close();
   }
 }
+
+export default Profile;

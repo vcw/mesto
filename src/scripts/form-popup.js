@@ -1,3 +1,6 @@
+import Popup from './popup.js';
+import Form from './form.js';
+
 class FormPopup extends Popup {
   create() {
     const { title, form }  = new Form(this.data);
@@ -10,3 +13,5 @@ class FormPopup extends Popup {
     this.form = form;
   }
 }
+
+export default FormPopup;

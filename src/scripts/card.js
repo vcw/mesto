@@ -1,3 +1,5 @@
+import PreviewPopup from './preview-popup.js'
+
 class Card {
   constructor(cardData) {
     this.card = this.create(cardData);
@@ -35,3 +37,5 @@ class Card {
     }
   }
 }
+
+export default Card;
